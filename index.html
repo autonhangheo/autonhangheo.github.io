@@ -25,6 +25,42 @@
     .info{display:grid;gap:12px;margin:22px 0}.info-row{display:flex;justify-content:space-between;gap:18px;padding:14px 0;border-bottom:1px solid var(--line);font-size:14px}.info-row span:first-child{color:var(--muted)}.info-row span:last-child{font-weight:800;text-align:right}
     .zalo-box{margin-top:22px;padding:18px;border-radius:16px;background:rgba(240,184,75,.08);border:1px solid rgba(240,184,75,.22)}.zalo-box small{display:block;color:var(--muted);margin-bottom:6px}.zalo-number{font-size:24px;font-weight:950;color:var(--gold2);letter-spacing:.8px}
     .sections{width:min(1180px,calc(100% - 32px));margin:0 auto 70px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.mini{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:22px}.mini .num{width:38px;height:38px;display:grid;place-items:center;border-radius:10px;background:rgba(240,184,75,.12);border:1px solid rgba(240,184,75,.24);color:var(--gold2);font-weight:900;margin-bottom:14px}.mini h3{margin:0 0 8px;font-size:17px}.mini p{color:var(--muted);margin:0;line-height:1.6;font-size:14px}
+
+    .demo-section{
+      width:min(1180px,calc(100% - 32px));
+      margin:0 auto 34px;
+      text-align:center;
+    }
+    .demo-title{
+      margin:0 0 10px;
+      font-size:clamp(26px,3vw,38px);
+      color:var(--gold2);
+      font-weight:900;
+      letter-spacing:-.5px;
+    }
+    .demo-subtitle{
+      margin:0 auto 22px;
+      max-width:760px;
+      color:var(--muted);
+      line-height:1.6;
+      font-size:15px;
+    }
+    .demo-frame{
+      max-width:960px;
+      margin:0 auto;
+      padding:10px;
+      border-radius:22px;
+      background:linear-gradient(135deg,rgba(240,184,75,.55),rgba(255,255,255,.08),rgba(240,184,75,.18));
+      box-shadow:0 24px 60px rgba(0,0,0,.42);
+    }
+    .demo-frame img{
+      display:block;
+      width:100%;
+      height:auto;
+      border-radius:15px;
+      border:1px solid rgba(255,255,255,.08);
+    }
+
     footer{border-top:1px solid var(--line);background:rgba(7,9,13,.76);color:#8e929c;text-align:center;padding:24px 16px;font-size:13px}
     @media(max-width:900px){.nav{padding:12px 0}.hero{grid-template-columns:1fr;padding:50px 0;min-height:auto}.sections{grid-template-columns:1fr}}
     @media(max-width:560px){.nav{align-items:flex-start;flex-direction:column;gap:8px}.navlinks{justify-content:flex-start}h1{font-size:46px}.lead{font-size:16px}.actions{flex-direction:column}.btn{width:100%}.card{padding:22px}.zalo-number{font-size:21px}}
@@ -36,6 +72,7 @@
       <a class="brand" href="#"><img src="daiquyetchien.png" alt="TLBB Nhà Nghèo"><div>TLBB <span>NHÀ NGHÈO</span></div></a>
       <div class="navlinks">
         <a href="#auto">Auto TLBB</a>
+        <a href="#giaodien">Giao Diện</a>
         <a href="https://www.facebook.com/groups/tlbbnhangheo/" target="_blank" rel="noopener">Cộng Đồng</a>
         <a href="https://www.facebook.com/tlbbnhangheo" target="_blank" rel="noopener">Fanpage</a>
       </div>
@@ -67,6 +104,14 @@
         </div>
         <div class="zalo-box"><small>ZALO LẤY KEY</small><div class="zalo-number">0769 804 730</div><div style="margin-top:5px;font-weight:800">Admin Toto</div></div>
       </aside>
+    </section>
+
+    <section class="demo-section" id="giaodien">
+      <h2 class="demo-title">Giao diện Auto Nhà Nghèo</h2>
+      <p class="demo-subtitle">Giao diện trực quan, đầy đủ các chức năng cần thiết để quản lý nhân vật và hỗ trợ quá trình chơi TLBB thuận tiện hơn.</p>
+      <div class="demo-frame">
+        <img src="hinhdemo.png" alt="Giao diện Auto TLBB Nhà Nghèo" loading="lazy">
+      </div>
     </section>
 
     <section class="sections">
